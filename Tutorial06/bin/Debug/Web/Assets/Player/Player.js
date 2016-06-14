@@ -1,7 +1,9 @@
 function loadPlayer() {
 	document.getElementById("controlbar").setAttribute("class", "active");
 	document.getElementById("playbutton").setAttribute("class", "");
-    document.getElementById("intro").style.filter = "grayscale(0%)";
+	var ele = document.createElement("div");
+	ele.id = "saturation";
+	document.getElementById("loadingProgress").appendChild(ele);
 }
 
 function playGame(play) {
