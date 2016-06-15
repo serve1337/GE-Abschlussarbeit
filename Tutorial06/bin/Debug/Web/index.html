@@ -10,38 +10,11 @@
 	
 </head>
 <body>
-	<div id="playerContainer" style="width: 600px; height: 300px;">
-		<img src="Assets/Player/intro.jpg" id="intro" />
-		<div id="player">
-			<a href="#" id="playbutton" class="play button active" onclick="playGame(true)"></a>
-			<canvas id="canvas"></canvas>
-		</div>
-		<div id="controlbar">
-			<div class="bg">
-			</div>
-			<a href="#" class="fullscreen" id="fullscreenButton"></a>
-		</div>
-		<div id="loadingProgress">
-			<div id="progressBar">
-			</div>
-			<div id="progressText">
-			</div>
-			<div id="saturation">
-			</div>
-		</div>
+	<div id="playit">
 	</div>
 	<script type="text/javascript">
-		function runMain () {
-			var $mainAssembly = JSIL.GetAssembly("Fusee.Tutorial.Web");
-			$mainAssembly.Fusee.Tutorial.Web.Tutorial.Main([]);
-		};
-
-		window.onresize = function(event) {
-			document.getElementById("canvas").setAttribute('width', window.innerWidth);
-			document.getElementById("canvas").setAttribute('height', window.innerHeight);
-		}
-
-		window.onresize();
+		// Spielname, Div ID, Width, Height, Fullscreen, Loading image
+		var player = new Player("Fusee.Tutorial.Web", "playit", "600px", "300px", false, true, "Assets/Player/intro.jpg");
 	</script>
 </body>
 </html>
