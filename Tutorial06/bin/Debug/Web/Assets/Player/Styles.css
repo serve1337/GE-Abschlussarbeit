@@ -1,3 +1,20 @@
+noscript {
+	font-family: calibri, Arial;
+	display: block;
+	background-color: #dd0000;
+	color: #fff;
+	padding: 10px;
+	max-width: 125px;
+}
+
+noscript a {
+	color: #eee;
+}
+
+noscript a:hover {
+	color: #fff;
+}
+
 #playerContainer {
 	position: relative;
 }
