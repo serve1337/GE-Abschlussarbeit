@@ -28,6 +28,9 @@ namespace Fusee.Tools.fuGen
 
             if (!Directory.Exists(Path.Combine(targWeb, "Assets", "Config")))
                 Directory.CreateDirectory(Path.Combine(targWeb, "Assets", "Config"));
+
+            if (!Directory.Exists(Path.Combine(targWeb, "Assets", "Player")))
+                Directory.CreateDirectory(Path.Combine(targWeb, "Assets", "Player"));
         }
 
 

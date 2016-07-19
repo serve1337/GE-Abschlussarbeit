@@ -48,16 +48,7 @@ JSIL.ImplementExternals("Fusee.Base.Imp.Web.WebAssetProvider", function ($) {
             imageData.Stride = image.width * 4; //TODO: Adjust pixel-size
 
             // Akquire and copy pixel data
-            var canvas = document.createElement("canvas");
-            canvas.width = image.width;
-            canvas.height = image.height;
-            var context = canvas.getContext("2d");
-            context.translate(canvas.width / 2, canvas.height / 2);
-            context.scale(1, -1);
-            context.translate(-canvas.width / 2, -canvas.height / 2);
-            context.drawImage(image, 0, 0);
-            var myData = context.getImageData(0, 0, image.width, image.height);
-            imageData.PixelData = myData.data;
+
 
             return imageData;
         }

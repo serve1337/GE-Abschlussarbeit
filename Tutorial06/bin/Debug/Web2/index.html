@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+	<head><title>Fusee Player</title>
+	
+	<link rel="stylesheet" type="text/css" href="Assets/Player/Styles.css">
+
+	<script src="Assets/Config/jsil_config.js" type="text/javascript"></script>
+	<script src="Assets/Scripts/JSIL.js" type="text/javascript"></script>
+	<script src="Assets/Player/Player.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="playit">
+		<noscript>
+		Um die Anwendung zu nutzen wird Javascript benoetigt. Hier finden Sie die <a href="http://www.enable-javascript.com/de/" target="_blank">Anleitung wie Sie JavaScript in Ihrem Browser einschalten</a>.
+		</noscript>
+	</div>
+	<script type="text/javascript">
+		// Spielname, Div ID, Width, Height, Play on load, Fullscreen, Loading image
+		new Player("Fusee.Tutorial.Web", "playit", "600px", "300px", false, true, "Assets/Player/intro.jpg");
+	</script>
+</body>
+</html>
