@@ -20,10 +20,5 @@ namespace Fusee.Tools.fuGen
             _title = entryPointInfo.DeclaringType.Name + " FUSEE App";
             _customCSS = (string.IsNullOrEmpty(customCSS)) ? "browser.css" : customCSS; // != "") ? Path.Combine("Assets", customCSS) : "";
         }
-
-        internal string TransformText()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

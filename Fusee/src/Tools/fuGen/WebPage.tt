@@ -3,12 +3,6 @@
 <html>
 <head>
 	<title><#= _title #></title>
-
-  <# if (_customCSS != "") { #>
-	<link rel="stylesheet" type="text/css" href="Assets/Styles/<#= _customCSS #>">
-  <# }  else  {#>
-	<link rel="stylesheet" type="text/css" href="Assets/Styles/browser.css">
-  <# } #>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
 	<link rel="stylesheet" type="text/css" href="Assets/Player/Styles.css">

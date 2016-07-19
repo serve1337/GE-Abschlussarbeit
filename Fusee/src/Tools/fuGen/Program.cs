@@ -33,7 +33,6 @@ namespace Fusee.Tools.fuGen
                 Directory.Move(Path.Combine(Environment.GetEnvironmentVariable("FuseeRoot"), "ext", "Player"), Path.Combine(targWeb, "Assets", "Player"));
         }
 
-
         /// <summary>
         /// Creates a relative path from one file or folder to another.
         /// </summary>
