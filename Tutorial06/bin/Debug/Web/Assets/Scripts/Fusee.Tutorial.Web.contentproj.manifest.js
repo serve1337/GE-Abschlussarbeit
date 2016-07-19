@@ -10,7 +10,7 @@ var $customSysSec = JSIL.GetAssembly("System.Security");
 if (typeof (contentManifest) !== "object") { contentManifest = {}; };
 contentManifest["Fusee.Tutorial.Web.contentproj"] = [
     ["Script",	"Fusee.Base.Core.Ext.js",	{  "sizeBytes": 1273 }],
-    ["Script",	"Fusee.Base.Imp.Web.Ext.js",	{  "sizeBytes": 8699 }],
+    ["Script",	"Fusee.Base.Imp.Web.Ext.js",	{  "sizeBytes": 9242 }],
     ["Script",	"opentype.js",	{  "sizeBytes": 166330 }],
     ["Script",	"Fusee.Xene.Ext.js",	{  "sizeBytes": 1441 }],
     ["Script",	"Fusee.Xirkit.Ext.js",	{  "sizeBytes": 44215 }],

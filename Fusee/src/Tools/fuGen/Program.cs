@@ -30,7 +30,7 @@ namespace Fusee.Tools.fuGen
                 Directory.CreateDirectory(Path.Combine(targWeb, "Assets", "Config"));
 
             if (!Directory.Exists(Path.Combine(targWeb, "Assets", "Player")))
-                Directory.CreateDirectory(Path.Combine(targWeb, "Assets", "Player"));
+                Directory.Move(Path.Combine(Environment.GetEnvironmentVariable("FuseeRoot"), "ext", "Player"), Path.Combine(targWeb, "Assets", "Player"));
         }
 
 
