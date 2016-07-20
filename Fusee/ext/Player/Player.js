@@ -4,27 +4,27 @@ var Player = function(game, id, width, height, autoplay, fullscreen, loadimage) 
 	this.game = game;
 	
 	this.width = width;
-	if(this.width = "undefined") {
+	if(this.width == "undefined") {
 		this.width = "100%";
 	}
-	
+
 	this.autoplay = autoplay;
-	if(this.autoplay = "undefined") {
+	if(this.autoplay == "undefined") {
 		this.autoplay = false;
 	}
 	
 	this.height = height;
-	if(this.height = "undefined") {
+	if(this.height == "undefined") {
 		this.height = "100%";
 	}
 	
 	this.fullscreen = fullscreen;
-	if(this.fullscreen = "undefined") {
+	if(this.fullscreen == "undefined") {
 		this.fullscreen = true;
 	}
 	
 	this.loadimage = loadimage;
-	if(this.loadimage = "undefined") {
+	if(this.loadimage == "undefined") {
 		this.loadimage = "Assets/Player/intro.jpg";
 	}
 	
@@ -32,8 +32,8 @@ var Player = function(game, id, width, height, autoplay, fullscreen, loadimage) 
 	
 	function whileLoading() {
 		loadPlayer();
-		
-		if(this.autoplay) {
+
+		if(autoplay) {
 			playGame();
 		}
 	}
